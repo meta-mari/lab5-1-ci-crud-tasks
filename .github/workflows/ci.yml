@@ -1,0 +1,36 @@
+name: CI Tasks API
+
+on:
+  push:
+    branches: [main, "feature/**"]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [18, 20]
+
+    steps:
+      - name: Checkout del codigo
+        uses: actions/checkout@v6
+
+      - name: Configurar Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v6
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Instalar dependencias
+        run: npm ci
+
+      - name: Ejecutar linting
+        run: npm run lint
+
+      - name: Ejecutar pruebas
+        run: npm test
+
+      - name: Generar cobertura
+        run: npm run test:coverage

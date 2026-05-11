@@ -1,0 +1,32 @@
+{
+  "name": "lab5-1-ci-crud-tasks",
+  "version": "1.0.0",
+  "description": "API CRUD con CI usando GitHub Actions",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meta-mari/lab5-1-ci-crud-tasks.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/meta-mari/lab5-1-ci-crud-tasks/issues"
+  },
+  "homepage": "https://github.com/meta-mari/lab5-1-ci-crud-tasks#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "eslint": "^10.3.0",
+    "jest": "^30.4.2",
+    "supertest": "^7.2.2"
+  }
+}
