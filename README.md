@@ -23,6 +23,8 @@ npm start
 
 ## Documentación del Laboratorio
 
-Puedes encontrar el informe completo con capturas de pantalla y evidencias en el siguiente enlace:
+Puedes encontrar los informes completo con capturas de pantalla y evidencias en el siguiente enlace:
 
-- [Ver informe del laboratorio](./INFORME.md)
+- [Ver informe 1 del laboratorio](./INFORME.md)
+- [Ver informe 2 del laboratorio](./INFORME2.md)
+
