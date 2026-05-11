@@ -1,4 +1,3 @@
-const unusedVariable = "provocar fallo de lint";
 const express = require("express");
 
 const app = express();
