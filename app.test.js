@@ -59,4 +59,11 @@ describe("API CRUD Tasks", () => {
 
     expect(res.statusCode).toBe(404);
   });
+
+  test("GET /version debe retornar la version", async () => {
+    const res = await request(app).get("/version");
+
+    expect(res.statusCode).toBe(200);
+    expect(res.body.version).toBe("1.0.0");
+  });
 });
